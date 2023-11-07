@@ -1,0 +1,674 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -338.1851851851855,
+    "scrollLeft": -82.66666666666663,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Zone",
+        "comment": "",
+        "columns": [
+          {
+            "name": "zone_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b1a70090-31e7-4ce1-a489-60ec3d41d7d3"
+          },
+          {
+            "name": "zone_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.93896484375,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "08b3e641-2d27-4e40-bc2c-4e2674453604"
+          },
+          {
+            "name": "zone_verrechnungs_faktor",
+            "comment": "",
+            "dataType": "DECIMAL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 155.9306640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "148d1b4d-2c6d-43e0-aeef-985cd9334373"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 139.444,
+          "top": 211.2225,
+          "zIndex": 429,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "57117a82-2440-49fa-afd0-acf67f13fc7e"
+      },
+      {
+        "name": "Verkaufsstand",
+        "comment": "",
+        "columns": [
+          {
+            "name": "verkaufsstand_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 100.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a3da8eaa-882a-44fd-a6a5-8f6be77f47bd"
+          },
+          {
+            "name": "verkaufsstand_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 122.681640625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "84ba5047-2871-4e54-a1ca-892e2e28c8e0"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 157.3461,
+          "top": 693.4453,
+          "zIndex": 470,
+          "widthName": 84.38623046875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "dff6b969-282e-4585-baa1-ee1a670683ec"
+      },
+      {
+        "name": "Produkt",
+        "comment": "",
+        "columns": [
+          {
+            "name": "produkt_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "77806263-7b8d-4449-b2e1-046398c8dbf0"
+          },
+          {
+            "name": "produkt_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.10986328125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "55c76b5a-1c9e-412c-ae28-46bf4e9493e8"
+          },
+          {
+            "name": "produkt_einheits_preis",
+            "comment": "",
+            "dataType": "DECIMAL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 132.80615234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "782e4b38-8e78-4c66-bc3a-7a15369646f3"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 741.7632,
+          "top": 969.8371,
+          "zIndex": 486,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "897ffc37-1484-463b-a282-65f0b953573c"
+      },
+      {
+        "name": "Produkt_Verkaufsstand",
+        "comment": "",
+        "columns": [
+          {
+            "name": "produkt_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "34395a73-089a-4c2e-ba10-850b78d6caa7"
+          },
+          {
+            "name": "verkaufsstand_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 100.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "49d36217-04e6-42a3-b1d9-2f5298a29dfa"
+          },
+          {
+            "name": "verkaufsstand_preis",
+            "comment": "",
+            "dataType": "DECIMAL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 118.33984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f08164b1-4ad9-473e-8320-fa74398d4cab"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 751.0846,
+          "top": 683.3059,
+          "zIndex": 521,
+          "widthName": 136.41796875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2521feb8-427a-42c1-b661-8500aba1399c"
+      },
+      {
+        "name": "Zone_Verkaufsstand",
+        "comment": "",
+        "columns": [
+          {
+            "name": "zone_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "daf25d3e-3cf4-4e51-97b3-58c1b40bd476"
+          },
+          {
+            "name": "verkaufsstand_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 100.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e8871000-a4b2-4323-a269-20a385cc5913"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 170.1967,
+          "top": 463.814,
+          "zIndex": 376,
+          "widthName": 121.2470703125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2e110233-11bf-4471-bf6d-0b545c7af642"
+      },
+      {
+        "name": "Umsatzmeldung",
+        "comment": "",
+        "columns": [
+          {
+            "name": "verkaufsstand_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 100.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a19725f2-3b65-4398-8f54-f77d7043983f"
+          },
+          {
+            "name": "produkt_id",
+            "comment": "",
+            "dataType": "UUID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2e3cc62e-bb68-47f4-a6fe-c7fca4142c4a"
+          },
+          {
+            "name": "zeitpunkt",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "fd114ab3-27c4-4dd2-a7ef-f133b9246cd6"
+          },
+          {
+            "name": "verkaufsmenge_stueck",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 135.681640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e8c6f1fd-b435-4d21-83a8-aab04c1b8cf1"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 738.9508,
+          "top": 387.3079,
+          "zIndex": 546,
+          "widthName": 95.92626953125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8b5c2274-3efd-4d78-9da8-42bc64866842"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "897ffc37-1484-463b-a282-65f0b953573c",
+          "columnIds": [
+            "77806263-7b8d-4449-b2e1-046398c8dbf0"
+          ],
+          "x": 953.966569140625,
+          "y": 969.8371,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "2521feb8-427a-42c1-b661-8500aba1399c",
+          "columnIds": [
+            "34395a73-089a-4c2e-ba10-850b78d6caa7"
+          ],
+          "x": 953.754521875,
+          "y": 813.8059,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_produkt_to_produkt_verkaufsstand",
+        "visible": true,
+        "id": "07dcad8f-0504-49d9-9a6d-8ff47948290c"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "57117a82-2440-49fa-afd0-acf67f13fc7e",
+          "columnIds": [
+            "b1a70090-31e7-4ce1-a489-60ec3d41d7d3"
+          ],
+          "x": 363.20962499999996,
+          "y": 341.72249999999997,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "2e110233-11bf-4471-bf6d-0b545c7af642",
+          "columnIds": [
+            "daf25d3e-3cf4-4e51-97b3-58c1b40bd476"
+          ],
+          "x": 363.83708085937496,
+          "y": 463.814,
+          "direction": "top"
+        },
+        "constraintName": "fk_zone_to_zone_verkaufsstand",
+        "visible": true,
+        "id": "eb8097c7-836e-4e10-bf20-93a32c42eaba"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "dff6b969-282e-4585-baa1-ee1a670683ec",
+          "columnIds": [
+            "a3da8eaa-882a-44fd-a6a5-8f6be77f47bd"
+          ],
+          "x": 364.48721328125,
+          "y": 693.4453,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "2e110233-11bf-4471-bf6d-0b545c7af642",
+          "columnIds": [
+            "e8871000-a4b2-4323-a269-20a385cc5913"
+          ],
+          "x": 363.83708085937496,
+          "y": 573.8140000000001,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_verkaufsstand_to_zone_verkaufsstand",
+        "visible": true,
+        "id": "9a66c76b-2f0a-497f-a7e7-e15fc2b7f430"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "dff6b969-282e-4585-baa1-ee1a670683ec",
+          "columnIds": [
+            "a3da8eaa-882a-44fd-a6a5-8f6be77f47bd"
+          ],
+          "x": 571.6283265625,
+          "y": 748.4453,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2521feb8-427a-42c1-b661-8500aba1399c",
+          "columnIds": [
+            "49d36217-04e6-42a3-b1d9-2f5298a29dfa"
+          ],
+          "x": 751.0846,
+          "y": 748.5559,
+          "direction": "left"
+        },
+        "constraintName": "fk_verkaufsstand_to_produkt_verkaufsstand",
+        "visible": true,
+        "id": "84db9c41-3409-415b-a16b-78ff9bead8eb"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2521feb8-427a-42c1-b661-8500aba1399c",
+          "columnIds": [
+            "34395a73-089a-4c2e-ba10-850b78d6caa7",
+            "49d36217-04e6-42a3-b1d9-2f5298a29dfa"
+          ],
+          "x": 953.754521875,
+          "y": 683.3059,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "8b5c2274-3efd-4d78-9da8-42bc64866842",
+          "columnIds": [
+            "2e3cc62e-bb68-47f4-a6fe-c7fca4142c4a",
+            "a19725f2-3b65-4398-8f54-f77d7043983f"
+          ],
+          "x": 953.67101484375,
+          "y": 538.3079,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_produkt_verkaufsstand_to_umsatzmeldung",
+        "visible": true,
+        "id": "67842d6f-123f-439a-bca5-afadb9c15ba3"
+      }
+    ]
+  }
+}
